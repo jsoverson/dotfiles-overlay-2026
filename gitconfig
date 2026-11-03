@@ -1,0 +1,10 @@
+# Included by ~/dotfiles/config/git/config.
+# One pattern per remote URL form; `*` in these globs does not cross '/'.
+[includeIf "hasconfig:remote.*.url:https://github.com/mimic-core/**"]
+	path = ~/.dotfiles-work/gitconfig.work
+[includeIf "hasconfig:remote.*.url:ssh://git@github.com/mimic-core/**"]
+	path = ~/.dotfiles-work/gitconfig.work
+[includeIf "hasconfig:remote.*.url:git@github.com:mimic-core/**"]
+	path = ~/.dotfiles-work/gitconfig.work
+[url "ssh://git@github.com/mimic-core/"]
+	insteadOf = https://github.com/mimic-core/
